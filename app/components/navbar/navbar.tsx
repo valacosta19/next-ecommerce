@@ -30,7 +30,7 @@ export const Navbar = () => {
 
       <ul className="flex gap-3">
         {pages.map((page, index) => {
-          return <li><Link key={index} href={page.path}>{page.name}</Link></li>
+          return <li key={index}><Link href={page.path}>{page.name}</Link></li>
         })}
       </ul>
 
